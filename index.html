@@ -1,77 +1,63 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <title>AR con A-Frame y AR.js</title>
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
         <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
     </head>
-    <body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs="sourceType:webcam;debugUIEnable:False;">
+    <body style="margin:0; overflow:hidden;">
+        <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+          
+            <a-marker type="pattern" url="https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/pattern-marker%20(3).patt?v=1729877182894">
+                <a-entity geometry="primitive: sphere; radius: 1" material="color: white;" scale="0.5 0.5 0.5"> ></a-entity> 
+                material="color: white;" scale="0.5 0.5 0.5"> 
+            </a-marker>
 
-        <a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-original.png">
-            <a-entity position="0 0 0" geometry="primitive: box;"
-            material="color:brown">
-        </a-entity>
-        </a-marker>
-        <a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-marcadores-colores-figura-geometrica_686868-8.png">
-            <a-entity geometry="primitive: circle; radius: 0.7" material="side: double"></a-entity>
-        </a-marker>
-        <a-marker type="pattern" url="https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/pattern-Adidas-Logo.patt?v=1729877903910">
-            <a-entity position="0 0 0" geometry="primitive: box" material="src: url (https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/4acd0ffb-e2da-45be-9811-6a10f49fb215.Tiles074_2K-PNG_Color.png?v=1729876616906); 
-                                                                           roughnessMap: url(https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/4989038b-adf5-4225-af87-04e65a080a76.Tiles074_2K-PNG_Roughness.png?v=1729876756283)
-                                                                           normalMap: url(https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/3fac520b-4268-4df6-8310-72d7e6133069.Tiles074_2K-PNG_NormalDX.png?v=1729876840074)">
+            <a-marker type="pattern" url="https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/pattern-63fc6d67514f83c6f6721b305bce4fe3%20(1).patt?v=1729877641225">
+                <a-entity geometry="primitive: sphere; radius: 1" material="color: white;" scale="0.5 0.5 0.5"> ></a-entity>
+                 
+            </a-marker>
+          
+            <a-marker type="pattern" url="https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/pattern-Adidas-Logo.patt?v=1729877903910">
+                <a-entity position="0 0 0" geometry="primitive: box" material="src: url (https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/4acd0ffb-e2da-45be-9811-6a10f49fb215.Tiles074_2K-PNG_Color.png?v=1729876616906); 
+                                                                               roughnessMap: url(https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/4989038b-adf5-4225-af87-04e65a080a76.Tiles074_2K-PNG_Roughness.png?v=1729876756283)
+                                                                               normalMap: url(https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/3fac520b-4268-4df6-8310-72d7e6133069.Tiles074_2K-PNG_NormalDX.png?v=1729876840074)">
+                </a-entity>
+            </a-marker>
+          
+            <a-marker type="pattern" url="https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/pattern-Nike-Logo.patt?v=1729878329362">
+                <a-entity geometry="primitive: sphere; radius: 1" 
+                material="color: white;" scale="0.5 0.5 0.5"> ></a-entity>
+                
+            </a-marker>
 
-        </a-entity>
-    </a-marker>
-    <a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-marcadores-colores-figura-geometrica_686868-8.png">
-        <a-entity geometry="primitive: circle; radius: 0.7" material="side: double"></a-entity>
-    </a-marker>
-</a-marker>
-<a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-marcadores-colores-figura-geometrica_686868-8.png">
-    <a-entity geometry="primitive: circle; radius: 0.4"  material="side: double"></a-entity>
-</a-marker>
-<a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-marcadores-colores-figura-geometrica_686868-8.png">
-    <a-entity geometry="primitive: circle; radius: 0.4"  material="side: double"></a-entity>
-</a-marker>
+            <a-marker type="pattern" url="https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/pattern-Nike-Logo.patt?v=1729878329362"></a-marker>
+                <a-entity geometry="primitive: sphere; radius: 0.25"
+                material="color: black;" scale="0.5 0.5 0.5"> ></a-entity>                 
+            </a-marker>
 
-<a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-marcadores-colores-figura-geometrica_686868-8.png">
-    <a-entity geometry="primitive: circle; radius: 0.4"  material="side: double"></a-entity>
-</a-marker>
+            <a-marker type="pattern" url="https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/pattern-Nike-Logo.patt?v=1729878329362"></a-marker>
+                <a-entity geometry="primitive: sphere; radius: 0.25"
+                material="color: black;" scale="0.5 0.5 0.5"> ></a-entity>
 
-    <a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-marcadores-colores-figura-geometrica_686868-8.png">
-        <a-entity geometry="primitive: circle; radius: 0.4"  material="side: double"></a-entity>
-    </a-marker>
+            
+                <a-marker type="pattern" url="https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/pattern-Nike-Logo.patt?v=1729878329362">
+                    <a-cone position="0 0.5 0" rotation="-57 -5 -4.5" radius-bottom="1" 
+                    height="1" material="color: narange;" scale="0.7 1 0.78">
+                    </a-cone>
+               </a-marker>
 
-<a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-marcadores-colores-figura-geometrica_686868-8.png"></a-marker>
-    <a-entity geometry="primitive: circle; radius: 0.4"  material="side: double"></a-entity>
-</a-marker>
+               <a-marker type="pattern" url="https://cdn.glitch.global/28053ee9-5420-476f-a95f-5d1cbef7a81d/pattern-Nike-Logo.patt?v=1729878329362">
+                <a-cone position="0 0.5 0" rotation="-57 -5 -4.5" radius-bottom="0.5" 
+                height="1" material="color: black;" scale="0.7 1 0.78">
+                </a-cone>
+           </a-marker>
 
-<a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-marcadores-colores-figura-geometrica_686868-8.png">
-    <a-entity geometry="primitive: circle; radius: 0.2"  material="side: double"></a-entity>
-</a-marker>
-
-<a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-marcadores-colores-figura-geometrica_686868-8.png">
-<a-entity geometry="primitive: cone; radiusBottom: 1; radiusTop: 0.1"   material="side: double"></a-entity>
-<a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-marcadores-colores-figura-geometrica_686868-8.png">
-    <a-entity geometry="primitive: circle; radius: 0.7" material="side: double; color:black"></a-entity>
-</a-marker>
-<a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-marcadores-colores-figura-geometrica_686868-8.png">
-<a-entity geometry="primitive: circle; radius: 0.2"  material="side: double; color:black"></a-entity>
-</a-marker>
-<a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-marcadores-colores-figura-geometrica_686868-8.png">
-<a-entity geometry="primitive: circle; radius: 0.2"  material="side: double; color:black"></a-entity>
-</a-marker>
-
-<a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-marcadores-colores-figura-geometrica_686868-8.png">
-<a-entity geometry="primitive: circle; radius: 0.2"  material="side: double; color:black"></a-entity>
-</a-marker>
-
-<a-marker type="pattern" url="c:\xampp8.2\htdocs\AR\Marcadores\pattern-marcadores-colores-figura-geometrica_686868-8.png">
-    <a-entity geometry="primitive: circle; radius: 0.2"  material="side: double; color:black"></a-entity>
-</a-marker>
-
-    </a-scene>
-
+               
+          
+		
+          
+            <a-entity camera></a-entity>
+        </a-scene>
     </body>
 </html>
