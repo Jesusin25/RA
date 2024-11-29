@@ -15,13 +15,24 @@
 <body style='margin: 0; overflow: hidden;'>
     <a-scene
         vr-mode-ui="enabled: false"
-		embedded
+        embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+
+        <!-- Cargar el modelo GLB -->
         <a-assets>
-            <a-asset-item id="modelo" src="omegamon_x-antibody.glb"
-        rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 20.398404; latitude: -101.223234;"/></a-asset-item>
+            <a-asset-item id="modelo" src="omegamon_x-antibody.glb"></a-asset-item>
         </a-assets>
+
+        <!-- Entidad que usa el modelo cargado con las transformaciones necesarias -->
+        <a-entity
+            gltf-model="#modelo"
+            rotation="0 180 0"
+            scale="0.15 0.15 0.15"
+            gps-entity-place="longitude: 20.398404; latitude: -101.223234;">
+        </a-entity>
+
+        <!-- Cámara GPS -->
         <a-camera gps-camera rotation-reader></a-camera>
-	</a-scene>
+    </a-scene>
 </body>
 </html>
